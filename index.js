@@ -1,7 +1,7 @@
 const express = require('express')
 var cors = require('cors')
 const app = express()
-const port = 5000
+const port =process.env.port || 5000
 app.use(cors())
 const mongoDB = require("./db")
 mongoDB();
